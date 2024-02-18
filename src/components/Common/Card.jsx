@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   return (
@@ -26,10 +27,12 @@ const Card = ({ data }) => {
           <p className="text-[12px]">{data?.details}</p>
         )}
         <div className="card-actions">
-          <button className="text-[14px] text-[#76C4EB] flex justify-center items-center font-medium gap-2 mt-[18px]">
-            <p className="text-[#76C4EB]"> Read More</p>
-            <IoIosArrowRoundForward className="text-[#50bdf3] text-[16px]" />
-          </button>
+          <Link to={`/details/${data?.id}`}>
+            <button className="text-[14px] text-[#76C4EB] flex justify-center items-center font-medium gap-2 mt-[18px]">
+              <p className="text-[#76C4EB]">Read More</p>
+              <IoIosArrowRoundForward className="text-[#50bdf3] text-[16px]" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
