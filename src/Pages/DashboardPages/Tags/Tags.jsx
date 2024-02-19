@@ -83,7 +83,7 @@ const Tags = () => {
     console.log("data", data);
   };
   return (
-    <div className=" pt-[56px] px-[56px] ">
+    <div className=" pt-[56px]">
       <div className="grid grid-cols-3 gap-2">
         <div className="col-span-2">
           <div className="flex justify-between items-center pt-[56px] px-[56px] ">
