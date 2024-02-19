@@ -6,16 +6,22 @@ const Home = () => {
   return (
     <div className="my-20 max-w-[1120px] mx-auto">
       <div>
-        {" "}
-        <h2 className="text-[40px] font-semibold text-center lg:text-left">
-          Explore Our Blogs
-        </h2>
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <h2 className="text-[40px] font-semibold text-center lg:text-left">
+            Explore Our Blogs
+          </h2>
+          <Link to="/login">
+            <button className="bg-[#76C4EB] px-3 py-1 text-white text-[14px] font-medium rounded-[4px]">
+              Admin Login
+            </button>
+          </Link>
+        </div>
+
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <p className="text-[16px] font-normal text-center lg:text-left">
             Discover the Depths of Knowledge and Inspiration in Every Post
           </p>
           <Link to="/details">
-            {" "}
             <p className="text-[16px] font-medium text-[#76C4EB]">See All</p>
           </Link>
         </div>

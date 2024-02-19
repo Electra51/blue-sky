@@ -234,19 +234,19 @@ export const sidebarData = [
     img: imgVector,
   },
   {
-    link: "/post",
+    link: "/dashboard/post",
     label: "All Post",
   },
   {
-    link: "/newPost",
+    link: "/dashboard/addPost",
     label: "Add New Post",
   },
   {
-    link: "/category",
+    link: "/dashboard/category",
     label: "Category",
   },
   {
-    link: "/tags",
+    link: "/dashboard/tags",
     label: "Tags",
   },
 ];

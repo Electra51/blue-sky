@@ -11,3 +11,7 @@
   box-sizing: border-box;
   color: #202020;
 }
+
+.active {
+  color: #76c4eb;
+}
